@@ -50,7 +50,7 @@ node index.js
 app.use('/api/todos', router);
 ```
 
-1. 데이터베이스의 TodoItem 렌더링
+#### 1. 데이터베이스의 TodoItem 렌더링
 
 ```js
 // TodoContainer.jsx
@@ -66,8 +66,7 @@ useEffect(() => {
   fetchTodos();
 }, []);
 ```
-
-2. 새로운 TodoItem 생성
+#### 2. 새로운 TodoItem 생성
 
 ```js
 // TodoContainer.jsx
@@ -86,7 +85,7 @@ const createTodo = async () => {
 };
 ```
 
-3. TodoItem 제목 변경
+#### 3. TodoItem 제목 변경
 
 ```js
 // TodoItem.jsx
@@ -114,7 +113,7 @@ const saveEdit = async (id) => {
 };
 ```
 
-4. TodoItem 완료 여부 변경
+#### 4. TodoItem 완료 여부 변경
 
 ```js
 // TodoItem.jsx
@@ -127,7 +126,7 @@ const updateTodo = async (id, completed) => {
 };
 ```
 
-5. TodoItem 삭제
+#### 5. TodoItem 삭제
 
 ```js
 // TodoItem.jsx
@@ -136,16 +135,6 @@ const deleteTodo = async (id) => {
   render();
 };
 ```
-
-#### 데이터베이스의 TodoItem 렌더링
-
-#### 새로운 TodoItem 생성
-
-#### TodoItem 제목 변경
-
-#### TodoItem 완료 여부 변경
-
-#### TodoItem 삭제
 
 최종 폴더 구조 예시
 
