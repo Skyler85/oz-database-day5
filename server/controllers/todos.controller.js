@@ -3,6 +3,7 @@ const sql = require('../db.js');
 exports.create = (req, res) => {
     const { title, completed } = req.body;
 
+    // Save Todo in the database
     const query = 'INSERT INTO todos (title, completed) VALUES (?, ?)';
     sql.query(query, [title, completed ? 1 : 0], (err, result) => {
         if (err) {
